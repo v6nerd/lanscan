@@ -480,9 +480,19 @@ def scan(o, arg_network, vendor, portscan):
     header = ['ip', 'name', 'mac', 'alive', 'vendor', 'open ports']
     content = [(host.ip, host.hostname, host.mac, str(host.is_alive), host.vendor, ", ".join(map(str, host.open_port_numbers))) for host in
                n.neighbours]
-    width, height = click.get_terminal_size()
-    table = texttable.Texttable(max_width=width)
-    table.set_deco(table.HEADER)
-    table.header(header)
-    table.add_rows(content, header=False)
-    print(table.draw())
+    #width, height = click.get_terminal_size()
+    #table = texttable.Texttable(max_width=width)
+    #table.set_deco(table.HEADER)
+    #table.header(header)
+    #table.add_rows(content, header=False)
+    #print(table.draw())
+
+    with open('lanscan.csv', 'w') as csvfile:
+        header = ['ip','host_name','mac_addr','alive','vendor','open_ports']
+        writer = csv.DictWriter(csvfile, fieldnames=header)
+        writer.writeheader()
+        for row in content:
+             writer.writerow({"ip":row[0], "host_name":row[1], "mac_addr":row[2], "alive":row[3], "vendor":row[4], "open_port$
+
+
+

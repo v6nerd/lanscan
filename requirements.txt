@@ -4,7 +4,7 @@ click==6.6
 netaddr==0.7.18
 netifaces==0.10.5
 python-nmap==0.6.1
-PyYAML==3.12
-requests==2.12.1
+PyYAML==4.2b1
+requests==2.20
 https://github.com/phaethon/scapy.git
 texttable==0.8.7

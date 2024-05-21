@@ -5,7 +5,7 @@ netaddr==0.7.18
 netifaces==0.10.5
 python-nmap==0.6.1
 PyYAML==5.4
-requests==2.20
+requests==2.32.0
 https://github.com/phaethon/scapy.git
 texttable==0.8.7
 urllib3>=1.25.9 # not directly required, pinned by Snyk to avoid a vulnerability

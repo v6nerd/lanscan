@@ -9,3 +9,4 @@ requests==2.20
 https://github.com/phaethon/scapy.git
 texttable==0.8.7
 urllib3>=1.25.9 # not directly required, pinned by Snyk to avoid a vulnerability
+certifi>=2024.7.4 # not directly required, pinned by Snyk to avoid a vulnerability

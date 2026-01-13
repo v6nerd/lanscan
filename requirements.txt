@@ -8,4 +8,4 @@ PyYAML==5.4
 requests==2.20
 https://github.com/phaethon/scapy.git
 texttable==0.8.7
-urllib3>=1.25.9 # not directly required, pinned by Snyk to avoid a vulnerability
+urllib3>=2.6.3 # not directly required, pinned by Snyk to avoid a vulnerability
